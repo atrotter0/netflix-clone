@@ -5,8 +5,14 @@
       <img [src]="featuredMovie.movieLogoUrl" class="featured-logo-image">
     </div>
     <div id="featured-actions-box">
-      <button class="btn btn-lg btn-featured">Play</button>
-      <button class="btn btn-lg btn-featured">Wishlist</button>
+      <button class="btn btn-lg btn-featured">
+        <fa name="play" class="featured-icon"></fa>
+        Play
+      </button>
+      <button class="btn btn-lg btn-featured">
+        <fa name="plus" class="featured-icon"></fa>
+        Wishlist
+      </button>
     </div>
     <div id="featured-details-box">
       <h4>{{ featuredMovie.header }}</h4>
