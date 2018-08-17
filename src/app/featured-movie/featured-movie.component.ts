@@ -7,5 +7,5 @@ import { FeaturedMovie } from '../models/featured-movie.model';
   styleUrls: ['./featured-movie.component.css']
 })
 export class FeaturedMovieComponent {
-  
+  featuredMovie: FeaturedMovie = FeaturedMovie.currentFeature;
 }
