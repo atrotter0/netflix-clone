@@ -1,3 +1,16 @@
-<div id="feautred-movie-block">
+<div id="featured-movie-block">
   <img [src]="featuredMovie.heroImgUrl" class="hero-image">
+  <div id="featured-movie-details">
+    <div>
+      <img [src]="featuredMovie.movieLogoUrl" class="featured-logo-image">
+    </div>
+    <div id="featured-actions-box">
+      <button class="btn btn-lg btn-featured">Play</button>
+      <button class="btn btn-lg btn-featured">Wishlist</button>
+    </div>
+    <div id="featured-details-box">
+      <h4>{{ featuredMovie.header }}</h4>
+      <p>{{ featuredMovie.description }}</p>
+    </div>
+  </div>
 </div>

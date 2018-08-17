@@ -4,4 +4,45 @@
 
 .hero-image {
   width: 100%;
+  z-index: -1;
+}
+
+#featured-movie-details {
+  width: 430px;
+  height: 400px;
+  margin-top: -720px;
+  margin-left: 60px;
+}
+
+.featured-logo-image {
+  width: 100%;
+}
+
+#featured-actions-box {
+  margin-top: 25px;
+}
+
+.btn-featured {
+  background-color: rgba(51,51,51,.4);
+  padding: 3px;
+  height: 45px;
+  width: 150px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  color: #e6e6e6;
+  margin-right: 10px;
+}
+
+.btn-featured:hover {
+  background-color: #e6e6e6;
+  color: #000;
+}
+
+#featured-details-box {
+  margin-top: 20px;
+  color: #e6e6e6;
+}
+
+#featured-details-box p {
+  font-size: 1.2em;
 }
