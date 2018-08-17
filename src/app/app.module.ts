@@ -4,12 +4,14 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { AppComponent } from './app.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
+import { PopularPickComponent } from './popular-pick/popular-pick.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopNavComponent
+    TopNavComponent,
+    PopularPickComponent
   ],
   imports: [
     BrowserModule,
