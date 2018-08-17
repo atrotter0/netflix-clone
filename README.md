@@ -10,7 +10,12 @@ A clone of the Netflix website using Angular.
 
 ## User Stories
 
-* As a user...
+* As a user, I want to be able to register for an account with Netflix Clone.
+* As a user, I want to be able to sign in and sign out of my account.
+* As a user, I want to be able to update my account information.
+* As a user, once I am signed in, I want to be able to browse by movie category (My List, Trending, Action/Adventure, Horror, SciFi, etc).
+* As a user, I want to be able to search by movie title to find a movie.
+* As a user, I want to be able to rate movies (thumbs up or thumbs down).
 
 ## Setup on OSX
 
@@ -33,9 +38,15 @@ A clone of the Netflix website using Angular.
 ## Technologies Used
 
 * HTML5/CSS3
+* Bootstrap
 * ES6
+* Typescipt
 * Node.js
 * Angular v5.2.0
+* Jasmine
+* Karma
+* Protractor
+* TSLint
 
 ## Links
 
