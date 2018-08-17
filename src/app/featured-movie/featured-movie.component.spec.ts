@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PopularPickComponent } from './popular-pick.component';
+import { FeaturedMovieComponent } from './featured-movie.component';
 
-describe('PopularPickComponent', () => {
-  let component: PopularPickComponent;
-  let fixture: ComponentFixture<PopularPickComponent>;
+describe('FeaturedMovieComponent', () => {
+  let component: FeaturedMovieComponent;
+  let fixture: ComponentFixture<FeaturedMovieComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PopularPickComponent ]
+      declarations: [ FeaturedMovieComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PopularPickComponent);
+    fixture = TestBed.createComponent(FeaturedMovieComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

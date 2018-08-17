@@ -5,13 +5,15 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { AppComponent } from './app.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
 import { PopularPickComponent } from './popular-pick/popular-pick.component';
+import { FeaturedMovieComponent } from './featured-movie/featured-movie.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavComponent,
-    PopularPickComponent
+    PopularPickComponent,
+    FeaturedMovieComponent
   ],
   imports: [
     BrowserModule,
