@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./top-nav.component.css']
 })
 export class TopNavComponent {
+  showSearchField: boolean = false;
 
+  toggleSearchBar() {
+    this.showSearchField = !this.showSearchField;
+  }
 }

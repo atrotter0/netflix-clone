@@ -5,3 +5,21 @@
 .navbar {
   padding: 0px 40px;
 }
+
+.nav-link {
+  color: #e5e5e5 !important;
+}
+
+.nav-link:hover {
+  color: #b3b3b3 !important;
+}
+
+#search-icon {
+  padding: 0px 20px;
+  color: #e5e5e5;
+  font-size: 25px;
+}
+
+#search-icon:hover {
+  cursor: pointer;
+}
