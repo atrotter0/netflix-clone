@@ -1,27 +1,49 @@
-# NetflixClone
+# Netflix Clone
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+#### Epicodus Angular Independent Project, 08.17.18
 
-## Development server
+#### By Abel Trotter
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description
 
-## Code scaffolding
+A clone of the Netflix website using Angular.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## User Stories
 
-## Build
+* As a user...
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Setup on OSX
 
-## Running unit tests
+* Install Node.js.
+* Install Angular CLI 1.6.5.
+* Clone the project repo.
+* Run `npm install` from project directory.
+* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+* Run `ng test` to execute the unit tests via Karma.
+* Run `ng e2e` to execute the end-to-end tests via Protractor.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Contribution Requirements
 
-## Running end-to-end tests
+1. Clone the repo
+1. Make a new branch
+1. Commit and push your changes
+1. Create a PR
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Technologies Used
 
-## Further help
+* HTML5/CSS3
+* ES6
+* Node.js
+* Angular v5.2.0
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Links
+
+* [Github Repo] https://github.com/atrotter0/netflix-clone
+* [Firebase App] 
+
+## License
+
+This software is licensed under the MIT license.
+
+Copyright (c) 2018 **Abel Trotter**
