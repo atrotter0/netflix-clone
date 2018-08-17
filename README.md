@@ -39,6 +39,7 @@ A clone of the Netflix website using Angular.
 
 * HTML5/CSS3
 * Bootstrap
+* Font Awesome
 * ES6
 * Typescipt
 * Node.js
