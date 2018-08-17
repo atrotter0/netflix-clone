@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FeaturedMovie } from '../models/featured-movie.model';
 
 @Component({
   selector: 'app-featured-movie',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./featured-movie.component.css']
 })
 export class FeaturedMovieComponent {
-
+  
 }
