@@ -14,10 +14,13 @@
   color: #b3b3b3 !important;
 }
 
-#search-icon {
-  padding: 0px 20px;
+.icon {
   color: #e5e5e5;
   font-size: 25px;
+}
+
+#search-icon {
+  padding: 0px 20px;
 }
 
 #search-icon:hover {

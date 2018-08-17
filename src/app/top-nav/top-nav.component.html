@@ -26,16 +26,16 @@
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <div id="search-icon" (click)="toggleSearchBar()">
-          <fa name="search"></fa>
+          <fa name="search" class="icon"></fa>
         </div>
         <div *ngIf="showSearchField" id="search-field">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <input class="form-control mr-sm-2" type="search" placeholder="Titles, people, genres" aria-label="Search">
         </div>
       </form>
       <ul class="navbar-nav mb-auto">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Account Icon
+            <fa name="user" class="icon"></fa>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">Account</a>
