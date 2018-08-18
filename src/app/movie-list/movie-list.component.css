@@ -1,4 +1,18 @@
 #movie-list-block {
-  outline: 1px solid purple;
   margin-top: 100px;
+  padding: 20px 60px;
+  color: #e4e4e4;
+  letter-spacing: 1px;
+}
+
+.movie-block {
+  display: inline-block;
+}
+
+.movie-thumbnail-box {
+  margin-right: 3px;
+}
+
+.movie-thumbnail {
+  width: 220px;
 }
