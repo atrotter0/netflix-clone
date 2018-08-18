@@ -8,6 +8,10 @@
 
 A clone of the Netflix website using Angular.
 
+Original website: https://www.netflix.com
+
+Clone: Not yet deployed.
+
 ## User Stories
 
 * As a user, I want to be able to register for an account with Netflix Clone.
