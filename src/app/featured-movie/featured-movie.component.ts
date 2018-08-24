@@ -11,11 +11,19 @@ import { FirebaseListObservable } from 'angularfire2/database';
 })
 export class FeaturedMovieComponent implements OnInit {
   featuredMovie: FirebaseListObservable<any[]>;
+  watchlist: FirebaseListObservable<any[]>;
+  watchlistAdditions: any[] = [];
 
   constructor(private movieService: MovieService) {}
 
   ngOnInit() {
     this.featuredMovie = this.movieService.getFeaturedMovie();
-    console.log(this.featuredMovie);
+    this.watchlist = this.movieService.getWatchlist();
+  }
+
+  addToWatchlist(movie) {
+    this.watchlistAdditions.push(movie);
+    this.movieService.updateUserWatchlist(this.watchlistAdditions);
+    this.movieService.getWatchlist();
   }
 }
