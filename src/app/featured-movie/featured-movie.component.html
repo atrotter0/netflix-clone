@@ -1,8 +1,8 @@
-<div id="featured-movie-block">
-  <img [src]="featuredMovie.heroImgUrl" class="hero-image">
+<div id="featured-movie-block" *ngFor="let movie of featuredMovie | async">
+  <img [src]="movie.heroImgUrl" class="hero-image">
   <div id="featured-movie-details">
     <div>
-      <img [src]="featuredMovie.movieLogoUrl" class="featured-logo-image">
+      <img [src]="movie.movieLogoUrl" class="featured-logo-image">
     </div>
     <div id="featured-actions-box">
       <button class="btn btn-lg btn-featured">
@@ -15,8 +15,8 @@
       </button>
     </div>
     <div id="featured-details-box">
-      <h4>{{ featuredMovie.header }}</h4>
-      <p>{{ featuredMovie.description }}</p>
+      <h4>{{ movie.header }}</h4>
+      <p>{{ movie.description }}</p>
     </div>
   </div>
 </div>

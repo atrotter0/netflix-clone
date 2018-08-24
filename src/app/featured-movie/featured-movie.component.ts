@@ -16,5 +16,6 @@ export class FeaturedMovieComponent implements OnInit {
 
   ngOnInit() {
     this.featuredMovie = this.movieService.getFeaturedMovie();
+    console.log(this.featuredMovie);
   }
 }

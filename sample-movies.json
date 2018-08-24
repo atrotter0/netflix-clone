@@ -40,7 +40,15 @@
       "id": "1",
       "currentFeature": 
         {
-          "id": "1" 
+          "id": "1",
+          "type": "show",
+          "genre": "Comedy",
+          "title": "Disenchantment",
+          "rating": "TV-14",
+          "length": "1 Part",
+          "popular": "true",
+          "imgUrl": "./../../assets/img/thumbnails/disenchanted.jpg",
+          "featuredMovie": "true"
         },
       "heroImgUrl": "./../../assets/img/featured-movie-hero.jpg",
       "movieLogoUrl": "./../../assets/img/featured-movie-logo.jpg",
