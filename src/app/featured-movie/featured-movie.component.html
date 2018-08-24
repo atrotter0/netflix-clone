@@ -8,10 +8,18 @@
         <fa name="play" class="featured-icon"></fa>
         Play
       </button>
-      <button class="btn btn-lg btn-featured" (click)="addToWatchlist(movie.currentFeature)">
-        <fa name="plus" class="featured-icon"></fa>
-        Watchlist
-      </button>
+      <div class="addButtonBox" *ngIf="featureAdded">
+        <button class="btn btn-lg btn-featured" (click)="removeFromWatchlist(movie.currentFeature)">
+          <fa name="check" class="featured-icon"></fa>
+          On List
+        </button>
+      </div>
+      <div class="addButtonBox" *ngIf="!featureAdded">
+          <button class="btn btn-lg btn-featured" (click)="addToWatchlist(movie.currentFeature)">
+            <fa name="plus" class="featured-icon"></fa>
+            Watchlist
+          </button>
+        </div>
     </div>
     <div id="featured-details-box">
       <h4>{{ movie.header }}</h4>

@@ -51,6 +51,10 @@
   font-size: 1.2em;
 }
 
+.addButtonBox {
+  display: inline-block;
+}
+
 /* responsive styles */
 @media screen and (max-width: 1080px) {
   #featured-movie-details {

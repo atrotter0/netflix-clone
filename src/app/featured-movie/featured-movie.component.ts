@@ -11,6 +11,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 })
 export class FeaturedMovieComponent implements OnInit {
   featuredMovie: FirebaseListObservable<any[]>;
+  featureAdded: boolean;
   watchlist: FirebaseListObservable<any[]>;
   watchlistAdditions: any[] = [];
 
@@ -22,7 +23,17 @@ export class FeaturedMovieComponent implements OnInit {
   }
 
   addToWatchlist(movie) {
+    this.featureAdded = true;
     this.watchlistAdditions.push(movie);
+    this.movieService.updateUserWatchlist(this.watchlistAdditions);
+    this.movieService.getWatchlist();
+  }
+
+  removeFromWatchlist(movie) {
+    this.featureAdded = false;
+    const index: number = this.watchlistAdditions.indexOf(movie);
+    console.log(index);
+    this.watchlistAdditions.splice(index, 1);
     this.movieService.updateUserWatchlist(this.watchlistAdditions);
     this.movieService.getWatchlist();
   }
