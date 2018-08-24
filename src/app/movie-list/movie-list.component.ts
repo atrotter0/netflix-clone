@@ -1,22 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Movie } from '../models/movie.model';
+import { MovieService } from '../movie.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-movie-list',
   templateUrl: './movie-list.component.html',
-  styleUrls: ['./movie-list.component.css']
+  styleUrls: ['./movie-list.component.css'],
+  providers: [MovieService]
 })
-export class MovieListComponent {
-  popularList: Movie[] = Movie.findPopular();
-  dramaList: Movie[] = Movie.findByCategory('Drama');
-  actionAdventureList: Movie[] = Movie.findByCategory('Action & Adventure');
-  scifiFantasyList: Movie[] = Movie.findByCategory('Sci-Fi & Fantasy');
-  horrorList: Movie[] = Movie.findByCategory('Horror');
-  crimeList: Movie[] = Movie.findByCategory('Crime');
-  sportsList: Movie[] = Movie.findByCategory('Sports');
-  documentaryList: Movie[] = Movie.findByCategory('Documentary');
-  familyList: Movie[] = Movie.findByCategory('Family');
+export class MovieListComponent implements OnInit {
+  movies: FirebaseListObservable<any[]>;
   //myList:
-  //watchItAgainList:
-  //newReleasesList:
+
+  constructor(private movieService: MovieService) {}
+
+  ngOnInit() {
+    this.movies = this.movieService.getMovies();
+  }
 }

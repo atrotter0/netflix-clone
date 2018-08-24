@@ -8,17 +8,4 @@ export class FeaturedMovie {
     public header: string,
     public description: string
   ) {}
-
-  static currentFeature: FeaturedMovie = FeaturedMovie.setFeaturedMovie('disenchanted');
-
-  static setFeaturedMovie(id: string) {
-    const movie = Movie.findById(id);
-    return new FeaturedMovie(
-                              movie,
-                              './../../assets/img/featured-movie-hero.jpg',
-                              './../../assets/img/featured-movie-logo.jpg',
-                              'Watch Part 1 Now',
-                              'Misadventure is her middle name. Unfortunately, "princess" is her title. A madcap medieval quest from Matt Groening.'
-                            );
-  }
 }

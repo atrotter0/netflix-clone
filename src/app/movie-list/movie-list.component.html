@@ -1,7 +1,7 @@
 <div id="movie-list-block">
   <div class="movie-list-row">
-    <h5>Popular on Netflix</h5>
-    <div *ngFor="let movie of popularList" class="movie-block">
+    <h5>Movies on Netflix</h5>
+    <div *ngFor="let movie of movies | async" class="movie-block">
       <div class="movie-thumbnail-box">
         <img [src]="movie.imgUrl" class="movie-thumbnail">
       </div>

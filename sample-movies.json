@@ -1,0 +1,51 @@
+{ "movies": 
+  [
+    {
+      "id": "1",
+      "type": "show",
+      "genre": "Comedy",
+      "title": "Disenchantment",
+      "rating": "TV-14",
+      "length": "1 Part",
+      "popular": "true",
+      "imgUrl": "./../../assets/img/thumbnails/disenchanted.jpg",
+      "featuredMovie": "true"
+    },
+    {
+      "id": "2",
+      "type": "show",
+      "genre": "Comedy",
+      "title": "The Office",
+      "rating": "TV-14",
+      "length": "9 Seasons",
+      "popular": "true",
+      "imgUrl": "./../../assets/img/thumbnails/the-office.jpg",
+      "featured_movie": "false"
+    },
+    {
+      "id": "3",
+      "type": "movie",
+      "genre": "Action & Adventure",
+      "title": "The Dark Knight",
+      "rating": "PG-13",
+      "length": "2h 32m",
+      "popular": "false",
+      "imgUrl": "./../../assets/img/thumbnails/the-dark-knight.jpg",
+      "featured_movie": "false"
+    }
+  ],
+  "featured_movie":
+  [
+    {
+      "id": "1",
+      "currentFeature": 
+        {
+          "id": "1" 
+        },
+      "heroImgUrl": "./../../assets/img/featured-movie-hero.jpg",
+      "movieLogoUrl": "./../../assets/img/featured-movie-logo.jpg",
+      "header": "Watch Part 1 Now",
+      "description": "Misadventure is her middle name. Unfortunately, 'princess' is her title. A madcap medieval quest from Matt Groening."
+    }
+  ]
+}
