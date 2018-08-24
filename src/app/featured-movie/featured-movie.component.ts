@@ -20,6 +20,24 @@ export class FeaturedMovieComponent implements OnInit {
   ngOnInit() {
     this.featuredMovie = this.movieService.getFeaturedMovie();
     this.watchlist = this.movieService.getWatchlist();
+    this.setFeatureAdded();
+  }
+
+  setFeatureAdded() {
+    var featureData;
+    var watchlistData;
+    this.featuredMovie.subscribe((data) => {
+      featureData = data[0];
+    });
+    this.watchlist.subscribe((data) => {
+      watchlistData = data[0];
+
+      if (this.dataMatches(watchlistData, featureData)) { this.featureAdded = true; }
+    });
+  }
+
+  dataMatches(watchlistData, featureData) {
+    return (watchlistData !== undefined && featureData.id === watchlistData.id);
   }
 
   addToWatchlist(movie) {
@@ -32,7 +50,6 @@ export class FeaturedMovieComponent implements OnInit {
   removeFromWatchlist(movie) {
     this.featureAdded = false;
     const index: number = this.watchlistAdditions.indexOf(movie);
-    console.log(index);
     this.watchlistAdditions.splice(index, 1);
     this.movieService.updateUserWatchlist(this.watchlistAdditions);
     this.movieService.getWatchlist();
