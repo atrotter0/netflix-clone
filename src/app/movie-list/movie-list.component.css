@@ -17,3 +17,32 @@
 .movie-thumbnail {
   width: 220px;
 }
+
+/* responsive styles */
+@media screen and (max-width: 790px) {
+  h5 {
+    margin: 20px;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+  }
+
+  .movie-block {
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .movie-thumbnail {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .movie-thumbnail {
+    display: block;
+    width: 220px;
+    margin: 0 auto;
+  }
+}
