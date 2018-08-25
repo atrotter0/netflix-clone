@@ -1,6 +1,6 @@
 # Netflix Clone
 
-#### Epicodus Angular Independent Project, 08.17.18
+#### Epicodus Angular Independent Project, 08.17.18 & 08.24.18
 
 #### By Abel Trotter
 
@@ -10,18 +10,18 @@ A clone of the Netflix website using Angular.
 
 Original website: https://www.netflix.com
 
-Clone: Not yet deployed.
+Clone: https://netflix-clone-epicodus.firebaseapp.com/
 
 ## User Stories
 
 * As a user, I want to be able to register for an account with Netflix Clone.
 * As a user, I want to be able to sign in and sign out of my account.
 * As a user, I want to be able to update my account information.
-* As a user, I want to be able to see Netflix Clone's newest featured movie recommendation.
-* As a user, once I am signed in, I want to be able to browse by movie category (My List, Trending, Action/Adventure, Horror, SciFi, etc).
+* As a user, I want to be able to see Netflix Clone's newest featured movie recommendation. (Finished)
+* As a user, once I am signed in, I want to be able to browse by movie category (Movies on Netflix, My List, Action/Adventure, Horror, SciFi, etc). (Finished)
 * As a user, I want to be able to search by movie title to find a movie.
 * As a user, I want to be able to rate movies (thumbs up or thumbs down).
-* As a user, I want to be able to add and remove movies from my list.
+* As a user, I want to be able to add and remove movies from my list. (Finished)
 * As a user, I want to be able to view basic details of a movie (title, genre, rating, length).
 
 ## Setup on OSX
@@ -59,7 +59,7 @@ Clone: Not yet deployed.
 ## Links
 
 * [Github Repo] https://github.com/atrotter0/netflix-clone
-* [Firebase App] 
+* [Firebase App] https://netflix-clone-epicodus.firebaseapp.com/
 
 ## License
 
