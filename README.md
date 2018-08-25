@@ -37,6 +37,7 @@ Clone: https://netflix-clone-epicodus.firebaseapp.com/
 
 ## Contribution Requirements
 
+1. Contact me for firebase db access
 1. Clone the repo
 1. Make a new branch
 1. Commit and push your changes
