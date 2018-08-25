@@ -3,7 +3,7 @@
   padding: 20px 60px;
   color: #e4e4e4;
   letter-spacing: 1px;
-  background-color: #343a40;
+  background-color: #141414;
 }
 
 .movie-block {
@@ -21,9 +21,9 @@
 /* responsive styles */
 @media screen and (max-width: 790px) {
   h5 {
+    color: #e4e4e4;
     margin: 20px;
     text-align: center;
-    border-bottom: 3px solid #fff;
   }
 
   .movie-block {
