@@ -63,6 +63,12 @@
   }
 }
 
+@media screen and (max-width: 983px) {
+  #featured-movie-block {
+    height: 400px;
+  }
+}
+
 @media screen and (max-width: 816px) {
   #featured-movie-details {
     width: 50%;
@@ -89,3 +95,22 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 715px) {
+  #featured-movie-block {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  #featured-movie-block {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  #featured-movie-block {
+    height: 225px;
+  }
+}
+
